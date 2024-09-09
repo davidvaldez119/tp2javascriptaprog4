@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        label{
+           display: block;
+           float:left;
+           width: 80px;
+        }
+
+</style>
+</head>
+<body>
+    <form action="">
+        <div>
+                <label for="nombre">nombre</label>
+                <input type="text" id = 'nombre'>
+        </div>
+  <br>
+        <div>
+                <label for="password ">password </label>
+                <input type="password " id = 'password '>
+        </div>
+  <br>
+         <div>
+                 <label for="Edad">Edad</label>
+                 <input type="text" id = 'Edad'>
+        </div>
+  <br>
+        <div>
+                 <label for="Email">Email</label>
+                 <input type="text" id = 'Email'>
+  </div>
+   <input type="submit" onclick='return enviarFormulario();' value="enviar">
+</form>
+<div id ='error'></div>
+<script src="prac1.js"></script> 
+</body>
+</html>
