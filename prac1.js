@@ -11,10 +11,24 @@ const enviarFormulario=()=>{
 return false;
 }
 
-//const passw=document.getElementById('password');
+const passw=document.getElementById('password');
 //passw.addEventListener('keyup',checkpassw);
 
-
+const form = document.getElementById('form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (!cuenta_letra() || !tiene_digito()) {
+    error.innerText = "mensaje descriptivo";
+    setTimeout(()=>{
+      error.innerText = '';
+    }, 3000)
+  }
+  const usuario = {
+    nombre: nombre.value,
+    password: passw.value,
+  }
+  console.log(usuario);
+})
 
 const  cuenta_letra=()=>{
     let rta=false;
